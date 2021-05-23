@@ -1,0 +1,26 @@
+﻿@model mvc_test.Models.Product
+
+@{
+    ViewBag.Title = "ProductDetails";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-1 col-sm-1 col-lg-1" >
+            <img src=@Model.prod_image alt="" class="img-fluid" style=""/>
+            <img src=@Model.prod_image alt="" class="img-fluid" style=""/>
+            <img src=@Model.prod_image alt="" class="img-fluid" style=""/>
+            <img src=@Model.prod_image alt="" class="img-fluid" style=""/>
+            <img src=@Model.prod_image alt="" class="img-fluid" style=""/>
+        </div>
+        <div class="col-md-5 col-lg-5">
+            <img src=@Model.prod_image class="img-fluid" alt="" />
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <h3>Test</h3>
+            <h3>@Model.prd_Name</h3>
+            <h3>@Model.prd_price</h3>
+        </div>
+    </div>
+</div>

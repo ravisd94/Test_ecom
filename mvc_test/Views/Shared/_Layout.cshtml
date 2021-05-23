@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/CSS/Site.css" rel="stylesheet" type="text/css" />
+
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />*@
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/Test.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Test.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="home" viewBox="0 0 16 16">
+            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </symbol>
+    </svg>
+
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="#">
+                    Animation Coding
+                </a>
+            </li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Services</a></li>
+
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <hr />
+    <main>
+        <div class="container-fluid">
+
+            @RenderBody()
+
+        </div>
+    </main>
+
+    <hr />
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="help" class="col">
+                    <h5 class="Styles__Heading-sc-11sha3m-1 ebvAbF">Help</h5>
+                    <ul class="">
+                        <li><a href="" title="FAQ">FAQ</a></li>
+                        <li><a href="" title="Delivery Information">Delivery Information</a></li>
+                        <li><a href="" title="Returns Policy">Returns Policy</a></li>
+                        <li><a href="" title="Make A Return">Make A Return</a></li>
+                        <li><a href="" title="Orders">Orders</a></li>
+                    </ul>
+                </div>
+                <div id="my-account" class="col">
+                    <h5 class="">My Account</h5>
+                    <ul class="">
+                        <li><a href="" title="Login">Login</a></li>
+                        <li><a href="" title="Register">Register</a></li>
+                    </ul>
+                </div>
+                <div id="pages" class="col">
+                    <h5 class="">Pages</h5>
+                    <ul class="">
+                        <li><a href="" title="Gymshark Central">Gymshark Central</a></li>
+                        <li><a href="" title="About Us">About Us</a></li>
+                        <li><a href="" title="Careers">Careers</a></li>
+                        <li><a href="" title="Transparency Report">Transparency Report</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <hr />
+            <div class="row bg-dark text-light">
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });</script>
+    <script>
+        function change_image(image) {
+            var container = document.getElementById("main-image");
+
+            container.src = image.src;
+        }
+        document.addEventListener("DOMContentLoaded", function (event) {
+        });
+    </script>
+</body>
+</html>
